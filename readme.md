@@ -1,866 +1,426 @@
-\# ⚡ JailFUCK v2.3 by MortisHAck
+# ⚡ JailFUCK v2.3
 
+![Version](https://img.shields.io/badge/version-2.3-blue.svg)
+![Status](https://img.shields.io/badge/status-beta-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Platform](https://img.shields.io/badge/platform-Roblox-red.svg)
 
+> **Многофункциональный чит для Roblox с передовыми возможностями ESP, Aimbot и Movement**
 
-```markdown
-
-<div align="center">
-
-
-
-!\[Version](https://img.shields.io/badge/version-2.3-blue?style=for-the-badge)
-
-!\[Platform](https://img.shields.io/badge/platform-Roblox-red?style=for-the-badge)
-
-!\[Status](https://img.shields.io/badge/status-Beta-yellow?style=for-the-badge)
-
-!\[Lua](https://img.shields.io/badge/language-Lua-purple?style=for-the-badge)
-
-
-
-<img src="https://img.shields.io/badge/⚡-JailFUCK-ff5555?style=for-the-badge\&labelColor=1a1a2e" alt="JailFUCK"/>
-
-
-
-\### 🎯 Advanced Roblox Cheat Script
-
-
-
-\*Многофункциональный скрипт с системой аимбота, ESP, управлением гравитацией и продвинутой гуманизацией\*
-
-
+Created by **MortisHAck**
 
 ---
 
+## 📋 Содержание
 
-
-\[Возможности](#-возможности) •
-
-\[Установка](#-установка) •
-
-\[Управление](#-управление) •
-
-\[Скриншоты](#-скриншоты) •
-
-\[FAQ](#-faq)
-
-
-
-</div>
-
-
+- [Особенности](#-особенности)
+- [Установка](#-установка)
+- [Использование](#-использование)
+- [Функционал](#-функционал)
+- [Горячие клавиши](#-горячие-клавиши)
+- [Конфигурация](#-конфигурация)
+- [FAQ](#-faq)
+- [Changelog](#-changelog)
+- [Disclaimer](#-disclaimer)
 
 ---
 
+## ✨ Особенности
 
+### 🎯 **Aimbot Core**
+- ✅ Точное наведение на цель через `CFrame.Lerp`
+- ✅ FOV Lock (защита от сброса анимациями)
+- ✅ Правильный расчёт углов камеры
+- ✅ Предсказание движения (Prediction)
+- ✅ Проверка видимости (Wallcheck)
+- ✅ Настраиваемый FOV круг
+- ✅ Система приоритета целей
 
-\## 📋 Содержание
+### 🤖 **Advanced Humanizer**
+- ✅ Имитация времени реакции человека
+- ✅ Реалистичная тряска прицела
+- ✅ Дрейф прицела (Aim Drift)
+- ✅ Шанс промаха
+- ✅ Случайный сид для естественности
+- ✅ Настраиваемая скорость и сила эффектов
 
+### 👁️ **ESP System**
+- ✅ 2D Bounding Box с настраиваемой толщиной
+- ✅ Заливка Box с регулируемой прозрачностью
+- ✅ Полоса здоровья (Health Bar)
+- ✅ Отображение имени и дистанции
+- ✅ **Chams (Highlight)** - подсветка сквозь стены
+- ✅ Проверка команды (Team Check)
+- ✅ Настраиваемые цвета
 
+### 🌙 **Gravity Control**
+- ✅ Переключение гравитации на лету
+- ✅ Пресеты: Земля, Луна, Марс, Космос
+- ✅ Визуальный индикатор
+- ✅ Плавная анимация
+- ✅ Полный контроль значения
 
-\- \[Возможности](#-возможности)
+### 🏃 **Movement**
+- ✅ Изменение скорости ходьбы
+- ✅ Изменение силы прыжка
+- ✅ Бесконечный прыжок
+- ✅ BunnyHop (авто-прыжок)
+- ✅ Отключение урона от падения
+- ✅ Авто-бег
 
-\- \[Установка](#-установка)
+### 🎨 **Visual**
+- ✅ Настраиваемый прицел (Crosshair)
+- ✅ FOV Changer с Lock защитой
+- ✅ Третье лицо (Third Person)
+- ✅ Watermark с FPS/Ping
+- ✅ Изменение времени суток
+- ✅ Ambient освещение
 
-\- \[Управление](#-управление)
-
-\- \[Конфигурация модулей](#-конфигурация-модулей)
-
-\- \[Changelog](#-changelog)
-
-\- \[FAQ](#-faq)
-
-\- \[Disclaimer](#%EF%B8%8F-disclaimer)
-
-
+### 🔧 **Misc**
+- ✅ Anti-AFK система
+- ✅ Подавление отдачи
+- ✅ Сохранение конфигураций
+- ✅ Темы оформления
+- ✅ Полная настройка UI
 
 ---
 
+## 📦 Установка
 
-
-\## ✨ Возможности
-
-
-
-\### 🎯 Aimbot
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*CFrame.Lerp наведение\*\* | Точное и плавное наведение на цель через интерполяцию камеры |
-
-| \*\*FOV Circle\*\* | Настраиваемый круг зоны захвата цели |
-
-| \*\*Target Selection\*\* | Выбор части тела: Head, UpperTorso, LowerTorso, HumanoidRootPart |
-
-| \*\*Prediction\*\* | Предсказание движения цели с настраиваемой силой |
-
-| \*\*Visibility Check\*\* | Проверка видимости — не целится сквозь стены |
-
-| \*\*Smoothness\*\* | Настраиваемая плавность (1-20) |
-
-| \*\*Max Distance\*\* | Ограничение максимальной дистанции захвата |
-
-
-
-\### 🧠 Advanced Humanizer
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Reaction Time\*\* | Имитация времени реакции человека (0-500мс) |
-
-| \*\*Aim Shake\*\* | Тряска прицела с настраиваемой амплитудой и скоростью |
-
-| \*\*Miss Chance\*\* | Процент шанса промаха (0-50%) |
-
-| \*\*Aim Drift\*\* | Плавное покачивание прицела |
-
-| \*\*Random Seed\*\* | Рандомизация паттернов тряски |
-
-
-
-\### 👁️ ESP (Extra Sensory Perception)
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Box ESP\*\* | Рамка вокруг игроков с настраиваемой толщиной |
-
-| \*\*Box Fill\*\* | Заливка рамки с регулируемой прозрачностью |
-
-| \*\*Name ESP\*\* | Отображение имени с настраиваемым размером и обводкой |
-
-| \*\*Health Bar\*\* | Полоса здоровья с динамическим цветом |
-
-| \*\*Distance\*\* | Отображение дистанции до игрока |
-
-| \*\*Chams\*\* | Highlight-подсветка через стены (тестирование) |
-
-| \*\*Team Check\*\* | Автоматическое скрытие тиммейтов |
-
-
-
-\### 🌙 Gravity Control
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Пресеты\*\* | Земля (196), Луна (32), Марс (74), Космос (0) |
-
-| \*\*Custom\*\* | Произвольное значение от 0 до 400 |
-
-| \*\*Toggle\*\* | Быстрое вкл/выкл по клавише V |
-
-| \*\*Индикатор\*\* | Анимированный индикатор на экране |
-
-
-
-\### 🏃 Movement
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Speed Hack\*\* | Изменение скорости ходьбы (1-200) |
-
-| \*\*Jump Power\*\* | Изменение силы прыжка (1-500) |
-
-| \*\*Infinite Jump\*\* | Бесконечные прыжки в воздухе |
-
-| \*\*No Fall Damage\*\* | Отключение урона от падения |
-
-| \*\*BunnyHop\*\* | Автоматический прыжок при приземлении |
-
-| \*\*Auto Sprint\*\* | Автоматический бег |
-
-
-
-\### 🎨 Visual
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Custom Crosshair\*\* | Полностью настраиваемый прицел |
-
-| \*\*FOV Changer + Lock\*\* | Изменение FOV камеры с защитой от сброса анимациями |
-
-| \*\*Third Person\*\* | Режим от третьего лица с настраиваемой дистанцией |
-
-| \*\*Watermark\*\* | Информационный оверлей с FPS и Ping |
-
-| \*\*Time of Day\*\* | Изменение времени суток |
-
-| \*\*Ambient Color\*\* | Настройка освещения мира |
-
-
-
-\### 🔧 Misc
-
-| Функция | Описание |
-
-|---------|----------|
-
-| \*\*Anti-AFK\*\* | Защита от автоматического кика за бездействие |
-
-| \*\*No Recoil\*\* | Уменьшение отдачи оружия |
-
-| \*\*Config System\*\* | Сохранение и загрузка конфигураций |
-
-| \*\*Theme Manager\*\* | Кастомизация темы интерфейса |
-
-
-
----
-
-
-
-\## 📦 Установка
-
-
-
-\### Требования
-
-\- Roblox Executor с поддержкой:
-
-&nbsp; - `Drawing` API
-
-&nbsp; - `game:HttpGet()`
-
-&nbsp; - `loadstring()`
-
-&nbsp; - `RaycastParams` / `Workspace:Raycast()`
-
-
-
-\### Поддерживаемые экзекуторы
-
-| Экзекутор | Статус |
-
-|-----------|--------|
-
-| Synapse X | ✅ Полная поддержка |
-
-| Script-Ware | ✅ Полная поддержка |
-
-| Fluxus | ✅ Работает |
-
-| KRNL | ✅ Работает |
-
-| Delta | ⚠️ Частичная поддержка |
-
-| Solara | ⚠️ Не тестировалось |
-
-
-
-\### Быстрый старт
-
-
-
-Вставьте в консоль экзекутора:
-
-
+### Метод 1: Loadstring (Рекомендуется)
 
 ```lua
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR\_USERNAME/JailFUCK/main/main.lua"))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/JailFUCK/main/script.lua"))()
 ```
 
+### Метод 2: Executor
 
+1. Скопируйте содержимое `script.lua`
+2. Вставьте в ваш executor (Synapse X, KRNL, Fluxus и т.д.)
+3. Нажмите Execute
 
-> ⚠️ Замените `YOUR\_USERNAME` на ваш GitHub username
+### Метод 3: Автозагрузка
 
-
-
-\### Ручная установка
-
-
-
-1\. Скачайте файл `main.lua` из репозитория
-
-2\. Откройте ваш экзекутор
-
-3\. Загрузите скрипт в редактор
-
-4\. Нажмите \*\*Execute\*\*
-
-
+Поместите скрипт в папку `autoexec` вашего executor
 
 ---
 
+## 🎮 Использование
 
+### Быстрый старт
 
-\## 🎮 Управление
+1. Запустите скрипт
+2. Дождитесь загрузки GUI
+3. Нажмите `RightShift` для открытия меню
+4. Настройте функции в соответствующих вкладках
+5. Profit! 🎉
 
+### Первая настройка
 
+**Для Aimbot:**
+1. Перейдите во вкладку `🎯 Aimbot`
+2. Включите `Включить Aimbot`
+3. Настройте FOV (рекомендуется 150-200)
+4. Настройте плавность (рекомендуется 6-10)
+5. Выберите клавишу прицеливания (по умолчанию ПКМ)
 
-\### Горячие клавиши
+**Для ESP:**
+1. Перейдите во вкладку `👁️ ESP`
+2. Включите `Включить ESP`
+3. Настройте нужные элементы (Box, Name, Health Bar)
+4. При желании включите Chams
 
+**Для Gravity:**
+1. Перейдите во вкладку `🏃 Movement`
+2. Включите `Включить управление`
+3. Нажмите `V` для переключения режима
 
+---
+
+## 🛠️ Функционал
+
+### 🎯 Aimbot
+
+| Функция | Описание | Рекомендуемое значение |
+|---------|----------|------------------------|
+| **FOV** | Радиус зоны захвата цели | 150-200 |
+| **Smoothness** | Плавность наведения (выше = плавнее) | 6-10 |
+| **Prediction** | Предсказание движения цели | 0.135 |
+| **Max Distance** | Максимальная дистанция захвата | 1000 |
+| **Target Part** | Часть тела для прицеливания | Head |
+| **Visibility Check** | Проверка стен | По желанию |
+
+### 🤖 Humanizer
+
+| Параметр | Описание | Значение |
+|----------|----------|----------|
+| **Reaction Time** | Задержка перед началом аима | 80-150ms |
+| **Shake Amount** | Сила тряски прицела | 0.5-2.0 |
+| **Shake Speed** | Скорость тряски | 1.0-2.0 |
+| **Miss Chance** | Шанс промахнуться | 0-10% |
+| **Aim Drift** | Плавное покачивание | По желанию |
+
+### 👁️ ESP
+
+| Элемент | Описание |
+|---------|----------|
+| **Box** | Рамка вокруг игрока |
+| **Box Fill** | Заливка рамки |
+| **Name** | Имя игрока |
+| **Health Bar** | Полоса здоровья |
+| **Distance** | Дистанция до игрока |
+| **Chams** | Подсветка сквозь стены |
+
+### 🌙 Gravity Presets
+
+| Режим | Значение | Описание |
+|-------|----------|----------|
+| 🌍 **Земля** | 196 | Стандартная гравитация |
+| 🌙 **Луна** | 32 | Низкая гравитация |
+| 🪐 **Марс** | 74 | Средняя гравитация |
+| 🚀 **Космос** | 0 | Невесомость |
+
+---
+
+## ⌨️ Горячие клавиши
 
 | Клавиша | Действие |
-
 |---------|----------|
+| **RightShift** | Открыть/закрыть меню |
+| **V** | Переключить гравитацию |
+| **MouseButton2** (ПКМ) | Прицеливание (по умолчанию) |
+| **Space** | Infinite Jump (если включен) |
 
-| `RightShift` | Открыть/закрыть меню |
-
-| `V` | Переключить гравитацию |
-
-| `Space` | Infinite Jump (когда включён) |
-
-| `Mouse2` (ПКМ) | Активация аимбота (по умолчанию) |
-
-
-
-\### Навигация по меню
-
-
-
-```
-
-🏠 Main      — Информация о скрипте, выгрузка
-
-👁️ ESP       — Настройки ESP и Chams
-
-🎯 Aimbot    — Настройки аимбота и гуманизера
-
-🏃 Movement  — Скорость, прыжок, гравитация
-
-🎨 Visual    — Прицел, FOV, камера, водяной знак
-
-🔧 Misc      — Anti-AFK, отдача, мир
-
-⚙️ Settings  — Конфиги, тема, горячие клавиши
-
-```
-
-
+*Все клавиши настраиваются в меню*
 
 ---
 
+## ⚙️ Конфигурация
 
+### Сохранение настроек
 
-\## ⚙️ Конфигурация модулей
+1. Настройте все параметры
+2. Перейдите во вкладку `⚙️ Settings`
+3. Введите название конфига
+4. Нажмите `Save Configuration`
 
+### Загрузка настроек
 
+1. Перейдите во вкладку `⚙️ Settings`
+2. Выберите нужный конфиг из списка
+3. Нажмите `Load Configuration`
 
-\### Aimbot — рекомендуемые настройки
+### Автозагрузка
 
-
-
-\#### 🟢 Легитный профиль
-
-```
-
-FOV: 80-120
-
-Smoothness: 12-16
-
-Humanizer: ON
-
-&nbsp; Reaction Time: 100-200мс
-
-&nbsp; Shake: 1.0-3.0
-
-&nbsp; Miss Chance: 5-15%
-
-&nbsp; Drift: ON (0.5-1.0)
-
-```
-
-
-
-\#### 🟡 Полу-рейдж
-
-```
-
-FOV: 200-350
-
-Smoothness: 5-8
-
-Humanizer: ON
-
-&nbsp; Reaction Time: 30-80мс
-
-&nbsp; Shake: 0.3-0.8
-
-&nbsp; Miss Chance: 0-5%
-
-```
-
-
-
-\#### 🔴 Рейдж (не рекомендуется)
-
-```
-
-FOV: 400-600
-
-Smoothness: 1-3
-
-Humanizer: OFF
-
-Prediction: ON
-
-```
-
-
-
-\### Gravity — пресеты планет
-
-
-
-| Планет | Значение | Эффект |
-
-|--------|----------|--------|
-
-| 🌍 Земля | 196 | Стандартная гравитация |
-
-| 🪐 Марс | 74 | Лёгкие прыжки |
-
-| 🌙 Луна | 32 | Высокие прыжки |
-
-| 🚀 Космос | 0 | Невесомость |
-
-
+Включите `Autoload Configuration` для автоматической загрузки конфига при запуске
 
 ---
 
-
-
-\## 📸 Скриншоты
-
-
+## ❓ FAQ
 
 <details>
+<summary><b>Q: Aimbot не работает!</b></summary>
 
-<summary>📷 Нажмите для просмотра</summary>
-
-
-
-> \*Скриншоты будут добавлены позже\*
-
-
-
-| Модуль | Превью |
-
-|--------|--------|
-
-| Main Menu | `скоро` |
-
-| ESP в действии | `скоро` |
-
-| Aimbot FOV Circle | `скоро` |
-
-| Gravity Control | `скоро` |
-
-
-
+**A:** Проверьте:
+- Включен ли Aimbot в настройках
+- Правильно ли выбрана клавиша прицеливания
+- Не слишком ли маленький FOV
+- Не включена ли проверка видимости при наличии препятствий
 </details>
 
+<details>
+<summary><b>Q: ESP показывает союзников</b></summary>
 
+**A:** Включите `Скрывать своих` (Team Check) во вкладке ESP
+</details>
+
+<details>
+<summary><b>Q: Гравитация не меняется</b></summary>
+
+**A:** 
+1. Убедитесь, что включено `Включить управление`
+2. Нажмите клавишу `V` для активации
+3. Проверьте индикатор в верхней части экрана
+</details>
+
+<details>
+<summary><b>Q: Скрипт не загружается</b></summary>
+
+**A:** 
+- Проверьте интернет-соединение
+- Убедитесь, что ваш executor поддерживает `Drawing` и `HttpGet`
+- Попробуйте другой executor
+</details>
+
+<details>
+<summary><b>Q: FOV камеры сбрасывается</b></summary>
+
+**A:** Включите `FOV Changer + Lock` во вкладке Visual - это защитит от сброса анимациями
+</details>
+
+<details>
+<summary><b>Q: Как сделать аим незаметным?</b></summary>
+
+**A:** 
+1. Включите Humanizer
+2. Установите Reaction Time: 100-200ms
+3. Shake Amount: 1-3
+4. Miss Chance: 5-15%
+5. Включите Aim Drift
+6. Увеличьте Smoothness до 12-15
+</details>
 
 ---
 
+## 📝 Changelog
 
-
-\## 📝 Changelog
-
-
-
-\### v2.3 (Текущая)
-
+### v2.3 (Current)
 ```diff
-
-\+ ✅ Исправлен прицел — точное наведение через CFrame.Lerp
-
-\+ ✅ FOV Lock — защита от сброса анимациями
-
-\+ ✅ Правильный расчёт углов камеры
-
-\+ ✅ Gravity Control с пресетами планет
-
-\+ ✅ Advanced Humanizer (Shake, Drift, Miss Chance, Reaction Time)
-
-\+ ✅ Chams (ESP Highlight) — тестирование
-
-\+ ✅ Full ESP Configuration (Box Fill, Name Size, Health Bar Width)
-
-\+ ✅ BunnyHop
-
-\+ ✅ No Fall Damage
-
-\+ ✅ Ambient Color Control
-
-\+ ✅ Animated Gravity Indicator
-
++ ✅ Исправлен прицел (точное наведение через CFrame)
++ ✅ FOV Lock (защита от анимаций)
++ ✅ Правильный расчёт углов камеры
++ ✅ Gravity Control система
++ ✅ Advanced Humanizer с полной настройкой
++ ✅ Новый дизайн ESP
++ ✅ Chams (Highlight) система
++ ✅ Улучшенная производительность
++ ✅ Исправлены утечки памяти
++ 🔧 Оптимизация Drawing объектов
++ 🔧 Улучшена система предсказания
 ```
 
-
-
-\### v2.2
-
+### v2.2
 ```diff
-
-\+ Базовый aimbot
-
-\+ ESP (Box, Name, Distance, Health)
-
-\+ Movement hacks
-
-\+ Anti-AFK
-
++ ESP система
++ Базовый Aimbot
++ Movement функции
++ Основной UI
 ```
 
-
-
-\### v2.1
-
+### v2.1
 ```diff
-
-\+ Начальная версия
-
-\+ Базовый GUI на LinoriaLib
-
++ Первый публичный релиз
 ```
 
+---
 
+## 🎨 Скриншоты
+
+> *Скриншоты будут добавлены позже*
+
+**Планируется:**
+- 📸 Главное меню
+- 📸 ESP в действии
+- 📸 Aimbot FOV круг
+- 📸 Gravity Control индикатор
+- 📸 Настройки Humanizer
 
 ---
 
+## 🔮 Планы на будущее
 
+- [ ] Улучшенная система Prediction
+- [ ] Silent Aim режим
+- [ ] Больше пресетов Humanizer
+- [ ] Система макросов
+- [ ] Gun mods (no spread, rapid fire)
+- [ ] Телепортация
+- [ ] Noclip
+- [ ] Fly
+- [ ] Автофарм функции
+- [ ] Discord webhook интеграция
+- [ ] Улучшенная защита от обнаружения
 
-\## 🏗️ Архитектура
+---
 
+## 🤝 Вклад
 
+Вклад приветствуется! Если у вас есть идеи или исправления:
+
+1. Fork репозиторий
+2. Создайте ветку (`git checkout -b feature/AmazingFeature`)
+3. Commit изменения (`git commit -m 'Add some AmazingFeature'`)
+4. Push в ветку (`git push origin feature/AmazingFeature`)
+5. Откройте Pull Request
+
+---
+
+## 📄 License
+
+Этот проект распространяется под лицензией MIT. См. файл `LICENSE` для подробностей.
+
+---
+
+## ⚠️ Disclaimer
 
 ```
+ВНИМАНИЕ: Этот скрипт предназначен только для образовательных целей!
 
-JailFUCK v2.3
+❗ Использование читов нарушает Terms of Service Roblox
+❗ Вы можете быть забанены за использование этого скрипта
+❗ Автор не несёт ответственности за последствия использования
+❗ Используйте на свой страх и риск!
 
-├── 📦 Библиотека (LinoriaLib)
-
-│   ├── Library.lua
-
-│   ├── ThemeManager.lua
-
-│   └── SaveManager.lua
-
-│
-
-├── 🎯 Модули
-
-│   ├── Aimbot
-
-│   │   ├── Target Selection (FOV-based)
-
-│   │   ├── CFrame.Lerp Smoothing
-
-│   │   ├── Prediction System
-
-│   │   ├── Visibility Raycast
-
-│   │   └── Humanizer Engine
-
-│   │
-
-│   ├── ESP
-
-│   │   ├── Box Drawing (Square)
-
-│   │   ├── Name Labels (Text)
-
-│   │   ├── Health Bars (Dynamic Color)
-
-│   │   ├── Distance Labels
-
-│   │   └── Chams (Highlight Instance)
-
-│   │
-
-│   ├── Movement
-
-│   │   ├── Gravity Control
-
-│   │   ├── Speed/Jump Modifier
-
-│   │   ├── Infinite Jump
-
-│   │   ├── No Fall Damage
-
-│   │   └── BunnyHop
-
-│   │
-
-│   ├── Visual
-
-│   │   ├── Custom Crosshair
-
-│   │   ├── FOV Changer + Lock
-
-│   │   ├── Watermark (FPS/Ping)
-
-│   │   └── Third Person Camera
-
-│   │
-
-│   └── Misc
-
-│       ├── Anti-AFK
-
-│       ├── No Recoil
-
-│       ├── Time/Ambient Control
-
-│       └── Config System
-
-│
-
-└── 🔄 Main Loop (RenderStepped)
-
-&nbsp;   ├── UpdateESP()
-
-&nbsp;   ├── Aimbot:Update()
-
-&nbsp;   ├── CrosshairDraw:Update()
-
-&nbsp;   ├── GravityControl:Update()
-
-&nbsp;   └── WatermarkObj:Update()
-
+Рекомендации:
+• Используйте на альтернативных аккаунтах
+• Не злоупотребляйте функциями
+• Не рекламируйте использование читов в игре
+• Уважайте других игроков
 ```
 
+---
 
+## 📞 Контакты
+
+**MortisHAck**
+- Discord: `mortishack` *(добавить при наличии)*
+- Telegram: `@mortishack` *(добавить при наличии)*
+- GitHub: [@MortisHAck](https://github.com/YOUR_USERNAME)
 
 ---
 
+## 🌟 Поддержка проекта
 
+Если вам понравился проект, поставьте ⭐ на GitHub!
 
-\## ❓ FAQ
-
-
-
-<details>
-
-<summary><b>Скрипт не загружается</b></summary>
-
-
-
-1\. Убедитесь, что ваш экзекутор поддерживает `Drawing` API
-
-2\. Проверьте подключение к интернету (скрипт загружает LinoriaLib)
-
-3\. Попробуйте другой экзекутор
-
-</details>
-
-
-
-<details>
-
-<summary><b>Аимбот не работает</b></summary>
-
-
-
-1\. Убедитесь, что аимбот включён в меню
-
-2\. Проверьте привязку клавиши (по умолчанию ПКМ)
-
-3\. Убедитесь, что в зоне FOV есть враги
-
-4\. Если включён Team Check — убедитесь, что цель из другой команды
-
-</details>
-
-
-
-<details>
-
-<summary><b>ESP не отображается</b></summary>
-
-
-
-1\. Включите ESP в табе 👁️ ESP
-
-2\. Проверьте настройку "Скрывать своих" — возможно все игроки в вашей команде
-
-3\. Увеличьте максимальную дистанцию отображения
-
-</details>
-
-
-
-<details>
-
-<summary><b>FOV камеры сбрасывается</b></summary>
-
-
-
-Используйте функцию \*\*"Изменить FOV камеры + Lock"\*\* во вкладке Visual. FOV Lock принудительно удерживает значение FOV каждый кадр, предотвращая сброс анимациями.
-
-</details>
-
-
-
-<details>
-
-<summary><b>Как сохранить настройки?</b></summary>
-
-
-
-Перейдите во вкладку ⚙️ Settings → введите имя конфига → нажмите Save. Для автозагрузки нажмите "Set as autoload".
-
-</details>
-
-
+**Способы поддержки:**
+- ⭐ Star на GitHub
+- 🔄 Share с друзьями
+- 🐛 Отчёты об ошибках
+- 💡 Предложения новых функций
+- 🤝 Pull Requests
 
 ---
 
+## 📚 Используемые библиотеки
 
-
-\## 🤝 Contributing
-
-
-
-Если вы хотите помочь проекту:
-
-
-
-1\. \*\*Fork\*\* этот репозиторий
-
-2\. Создайте ветку: `git checkout -b feature/новая-функция`
-
-3\. Внесите изменения и сделайте коммит
-
-4\. Отправьте \*\*Pull Request\*\*
-
-
-
-\### Приоритетные задачи
-
-\- \[ ] Silent Aim
-
-\- \[ ] Triggerbot
-
-\- \[ ] Radar/Minimap ESP
-
-\- \[ ] Skeleton ESP
-
-\- \[ ] Tracer Lines
-
-\- \[ ] Улучшенный No Recoil (перехват Remote Events)
-
-\- \[ ] Поддержка специфичных игр (Jailbreak, Da Hood, etc.)
-
-
+- [LinoriaLib](https://github.com/violin-suzutsuki/LinoriaLib) - UI Library
+- Roblox Drawing API
+- Roblox RunService
 
 ---
 
+## 🏆 Credits
 
-
-\## ⚠️ Disclaimer
-
-
-
-> \*\*Этот проект создан исключительно в образовательных целях.\*\*
-
->
-
-> Использование данного скрипта может нарушать Terms of Service Roblox и привести к бану вашего аккаунта. Авторы не несут ответственности за любые последствия использования данного ПО.
-
->
-
-> \*\*Используйте на свой страх и риск.\*\*
-
-
+**Создатель:** MortisHAck
+**UI Library:** Linteria (LinoriaLib)
+**Вдохновение:** Roblox Scripting Community
 
 ---
-
-
-
-\## 📜 License
-
-
-
-Этот проект распространяется под лицензией \*\*MIT\*\*.
-
-
-
-```
-
-MIT License
-
-
-
-Copyright (c) 2024 MortisHAck
-
-
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-
-of this software and associated documentation files (the "Software"), to deal
-
-in the Software without restriction, including without limitation the rights
-
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-
-copies of the Software, and to permit persons to whom the Software is
-
-furnished to do so, subject to the following conditions:
-
-
-
-The above copyright notice and this permission notice shall be included in all
-
-copies or substantial portions of the Software.
-
-
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-
-SOFTWARE.
-
-```
-
-
-
----
-
-
 
 <div align="center">
 
+### Made with ❤️ by MortisHAck
 
+**⚡ JailFUCK v2.3**
 
-\*\*⚡ JailFUCK v2.3 by MortisHAck\*\*
+*"Если не можешь победить их легально - читай с умом"*
 
-
-
-Made with ❤️ and ☕
-
-
-
-⭐ Star this repo if you find it useful!
-
-
+![Made with Lua](https://img.shields.io/badge/Made%20with-Lua-blue.svg?style=for-the-badge&logo=lua)
+![Platform Roblox](https://img.shields.io/badge/Platform-Roblox-red.svg?style=for-the-badge)
 
 </div>
 
-```
+---
 
+<sub>© 2024 MortisHAck. Все права защищены. Используйте ответственно.</sub>
