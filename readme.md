@@ -118,7 +118,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MortisClub/Jailbird-H
 2. Open your executor (Synapse X, KRNL, Fluxus, etc.)
 3. Paste the loadstring:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MortisClub/Jailbird-Hack/main/obf_4gPh7M0718NQMMjbiEeuIIoW00gjUfRcuy41IpKK3LqFWU6eDbheeHfmj1T6Q7uf.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MortisClub/Jailbird-Hack/main/jailfuck.lua"))()
 ```
 4. Execute and wait for the GUI to load
 5. Press `RightShift` to open menu
