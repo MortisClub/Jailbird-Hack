@@ -20,7 +20,7 @@
 ## 🚀 Quick Start
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MortisClub/Jailbird-Hack/main/obf_4gPh7M0718NQMMjbiEeuIIoW00gjUfRcuy41IpKK3LqFWU6eDbheeHfmj1T6Q7uf.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MortisClub/Jailbird-Hack/main/jailfuck.lua"))()
 ```
 
 **Или сокращенная ссылка:**
